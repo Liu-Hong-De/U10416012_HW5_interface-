@@ -1,6 +1,5 @@
 //U10416012 劉宏德
 
-
 import javafx.application.Application;
 import javafx.scene.layout.Pane;
 import javafx.scene.paint.Color;
@@ -16,6 +15,7 @@ public class BeanGame extends Application  {
 		
 		Pane a = new Pane();
 		
+		// create the bean game frame with line
 		Line x1 = new Line();
 		x1.setStartX(150);
 		x1.setStartY(0);
@@ -102,6 +102,7 @@ public class BeanGame extends Application  {
 		
 		a.getChildren().addAll(x1, x2, x3, x4, x5, x6, x7, x8, x9, x10, x11, x12, x13, x14);
 		
+		// create bean game obstacle with circle
 		Circle c1 = new Circle();
 		c1.setCenterX(50);
 		c1.setCenterY(400);
@@ -273,8 +274,9 @@ public class BeanGame extends Application  {
 		a.getChildren().addAll(c1, c2, c3, c4, c5, c6, c7, c8, c9, c10, c11, c12, c13, c14, c15,
 						c16, c17, c18, c19, c20, c21, c22, c23, c24, c25, c26, c27, c28);
 		
+		//set the window range
 		Scene scene = new Scene(a, 400, 500);
-		primaryStage.setTitle("my funny bean game");
+		primaryStage.setTitle("my funny bean game");	//set title
 		primaryStage.setResizable(false);
 		primaryStage.setScene(scene);
 		primaryStage.show();
